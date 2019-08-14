@@ -1,0 +1,31 @@
+.watch-story {
+	@include filtered-background("../images/backgrounds/city.png");
+	height: 50vh;
+	min-height: 400px;
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	.play-container {
+		border: 3px solid white;
+		height: 100px;
+		width: 100px;
+		border-radius: 100%;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+		background: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+		.play-button {
+			margin-left: 7px;
+		}
+	}
+	h3 {
+		margin-top: 31.1px;
+		font-weight: normal;
+		font-size: 16px;
+		letter-spacing: 0.05em;
+		color: #fff;
+	}
+}

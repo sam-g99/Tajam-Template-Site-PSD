@@ -1,0 +1,44 @@
+.our-story {
+	display: flex;
+	flex-flow: column;
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 15px;
+	@include desktop-start {
+		flex-flow: row;
+		padding: 10px;
+		padding-top: 65.3px;
+		padding-bottom: 65.3px;
+		max-width: 1000px;
+	}
+	img {
+		width: 100%;
+		@include breakpoint(299) {
+			width: auto;
+		}
+		align-self: center;
+		margin-bottom: 20px;
+		@include desktop-start {
+			margin-top: -50px;
+			margin-right: 100px;
+		}
+	}
+	h2 {
+		font-weight: 400;
+		color: color(dark-text);
+		text-align: center;
+		font-size: 22px;
+		margin-bottom: 10px;
+		@include desktop-start {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+	}
+	p {
+		font-size: 14px;
+		letter-spacing: 0.03em;
+		line-height: 22px;
+		color: color(dark-text);
+		padding: 5px;
+	}
+}

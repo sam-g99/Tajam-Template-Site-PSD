@@ -1,0 +1,47 @@
+.home {
+	@include filtered-background("../images/backgrounds/homesection.png");
+	@include flex;
+	height: 100vh;
+	max-height: 670px;
+	text-align: center;
+	z-index: 500;
+	h1 {
+		font-weight: normal;
+		font-size: 28px;
+		letter-spacing: 0.01em;
+		width: 100%;
+		@include for-tablet-portrait-up {
+			font-size: 32px;
+		}
+	}
+	.divider {
+		width: 50px;
+		margin-top: 28px;
+		height: 1px;
+		background: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+	}
+	p {
+		margin-top: 25px;
+		font-size: 14px;
+		letter-spacing: 0.05em;
+		line-height: 24px;
+		width: 95%;
+		max-width: 780px;
+	}
+	.bubbles {
+		display: flex;
+		position: absolute;
+		bottom: 10%;
+		span {
+			@include flex-spacing(4px);
+			border-radius: 100%;
+			width: 10px;
+			height: 10px;
+			background: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+			border: 1px solid #c2c2c2;
+		}
+		:first-child {
+			border: none;
+		}
+	}
+}

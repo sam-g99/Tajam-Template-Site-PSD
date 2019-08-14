@@ -1,0 +1,86 @@
+.contact-us {
+	margin: 0 auto;
+	padding-top: 69px;
+	width: 100%;
+	max-width: 900px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	padding: 10px;
+	@include desktop-start {
+		align-items: auto;
+		flex-flow: row;
+		padding: 0;
+		padding-top: 69px;
+	}
+	.contact-form {
+		display: flex;
+		flex-flow: column;
+		width: 100%;
+		max-width: 420px;
+		margin-bottom: 50px;
+		@include desktop-start {
+			margin: 0;
+			width: 50%;
+		}
+		h2 {
+			font-size: 22px;
+			line-height: 26.4px;
+			text-align: left;
+			color: #413d4b;
+		}
+		input[type="text"] {
+			margin-top: 23px;
+		}
+		textarea {
+			width: 100%;
+			max-width: 420px;
+			font-size: 14px;
+			height: 200px;
+			padding: 10px;
+			border: 1px solid #ececec;
+			margin-top: 25px;
+			font-family: Arial;
+			resize: none;
+		}
+	}
+	.happy-clients {
+		@include desktop-start {
+			margin-left: auto;
+		}
+		h2 {
+			text-align: center;
+			font-family: Arial;
+			font-weight: normal;
+			font-size: 22px;
+			letter-spacing: 0.05em;
+			line-height: 26.4px;
+			color: #413d4b;
+			margin-bottom: 20px;
+			@include breakpoint(600) {
+				text-align: left;
+			}
+		}
+		.client-logos {
+			width: 100%;
+			max-width: 381.64px;
+			display: flex;
+			flex-wrap: wrap;
+			div {
+				width: 100%;
+				margin: 0;
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+				margin-top: 30px;
+				@include breakpoint(600) {
+					flex-basis: calc(50% - 40px);
+					margin: 20px;
+					&:nth-child(odd) {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+}

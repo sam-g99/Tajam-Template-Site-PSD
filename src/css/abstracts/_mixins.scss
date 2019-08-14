@@ -1,0 +1,78 @@
+@mixin flex {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin psuedo-element {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+@mixin flex-spacing($spacing) {
+  margin-right: $spacing;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+@mixin vertical-spacing($spacing) {
+  margin-bottom: $spacing;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+@mixin horizontal-spacing($spacing) {
+  margin-right: $spacing;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+@mixin filtered-background($image-url) {
+  position: relative;
+  color: white;
+  &:before {
+    @include psuedo-element;
+    background: url($image-url);
+    background-size: cover;
+    z-index: -2;
+  }
+  &:after {
+    @include psuedo-element;
+    background: color(main);
+    opacity: 0.85;
+    z-index: -1;
+  }
+}
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 534px) {
+    @content;
+  }
+}
+@mixin desktop-start {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+@mixin breakpoint($size) {
+  @media only screen and (min-width: $size + px) {
+    @content;
+  }
+}

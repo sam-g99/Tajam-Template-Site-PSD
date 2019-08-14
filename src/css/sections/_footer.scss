@@ -1,0 +1,194 @@
+footer {
+	@include filtered-background("../images/backgrounds/footer.png");
+	margin-top: 300px;
+	padding-top: 70px;
+	padding-bottom: 30px;
+	flex-flow: column;
+	align-items: center;
+	justify-items: center;
+	width: 100%;
+	@include breakpoint(939) {
+		flex-flow: row;
+	}
+	.content {
+		display: flex;
+		width: 100%;
+		max-width: 939px;
+		margin: 0 auto;
+		align-items: center;
+		flex-flow: column;
+		@include breakpoint(939) {
+			flex-flow: row;
+		}
+		h3 {
+			font-family: Arial;
+			font-weight: normal;
+			font-size: 15px;
+			letter-spacing: 0.05em;
+			line-height: 26px;
+			text-align: left;
+			color: #fff;
+			margin-bottom: 35.7px;
+		}
+		.tajam {
+			display: flex;
+			height: 50px;
+			margin-bottom: 11px;
+			div {
+				width: 44px;
+				height: 50px;
+				background: linear-gradient(#00e0d0 0%, #4aa3cc 100%);
+			}
+			h3 {
+				margin-top: 15px;
+				margin-left: 11.2px;
+				font-size: 30px;
+				font-weight: bold;
+				height: 30px;
+				align-self: center;
+				letter-spacing: normal;
+				background: linear-gradient(#00e0d0 0%, #4aa3cc 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		.basis {
+			flex-basis: 33.33%;
+		}
+		.info-1 {
+			p {
+				width: 100%;
+				max-width: 299px;
+				margin-bottom: 30px;
+				font-size: 14px;
+				letter-spacing: 0.03em;
+				line-height: 26px;
+				text-align: left;
+				color: #fff;
+				@include breakpoint(939) {
+					height: 201.67px;
+					margin: 0;
+				}
+			}
+		}
+		.our-studio {
+			p {
+				width: 100%;
+				max-width: 271px;
+				height: 98.67px;
+				font-family: Arial;
+				font-weight: normal;
+				font-size: 14px;
+				letter-spacing: 0.03em;
+				line-height: 26px;
+				text-align: left;
+				color: #fff;
+			}
+			.location,
+			.phone-number {
+				display: flex;
+				p {
+					margin-top: -5px;
+				}
+				img {
+					width: 14px;
+					height: 19px;
+					margin-right: 10px;
+				}
+			}
+		}
+		.stay-in-touch {
+			width: 291px;
+			.subscribe-form {
+				display: flex;
+				flex-grow: 0;
+				flex-shrink: 0;
+				width: 291px;
+				input[type="text"] {
+					width: 211px;
+					background-color: rgba(255, 255, 255, 0);
+					font-size: 14px;
+					letter-spacing: 0.05em;
+					line-height: 26px;
+					color: #fff;
+					opacity: 0.75;
+					margin-right: auto;
+					flex-grow: 0;
+					flex-shrink: 0;
+				}
+				.mail-airplane {
+					width: 70px;
+					height: 45px;
+					background: white;
+					border: 1px solid #fff;
+					opacity: 0.5;
+					display: flex;
+					flex-flow: column;
+					justify-content: center;
+					align-items: center;
+					margin-left: auto;
+				}
+				::placeholder {
+					color: #fff;
+					opacity: 1;
+				}
+			}
+			.social-media-icons {
+				display: inline-flex;
+				width: auto;
+				div {
+					@include horizontal-spacing(8px);
+					display: flex;
+					flex-flow: column;
+					justify-content: center;
+					align-items: center;
+					border: 1px solid;
+					border-radius: 100%;
+					padding: 2%;
+					height: 35px;
+					width: 35px;
+					margin-top: 31px;
+				}
+				img {
+				}
+			}
+		}
+		.bottom {
+			position: absolute;
+		}
+	}
+	.bottom {
+		display: flex;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 939px;
+		margin-top: 30px;
+
+		padding-bottom: 30px;
+		flex-flow: column;
+		align-items: center;
+		@include breakpoint(939) {
+			margin-top: -30px;
+			flex-flow: row;
+		}
+		ul {
+			list-style-type: none;
+			li {
+				font-size: 22px;
+				@include breakpoint(939) {
+					@include horizontal-spacing(30px);
+					float: left;
+					font-size: 14px;
+				}
+			}
+		}
+		p {
+			margin-top: 20px;
+			@include breakpoint(939) {
+				margin-top: 0px;
+				margin-left: auto;
+				margin-right: 21px;
+			}
+		}
+	}
+}
