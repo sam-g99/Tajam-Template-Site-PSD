@@ -168,7 +168,7 @@ footer {
 		flex-flow: column;
 		align-items: center;
 		@include breakpoint(939) {
-			margin-top: -30px;
+			margin-top: 15px;
 			flex-flow: row;
 		}
 		ul {
