@@ -226,10 +226,14 @@
 		<section class="contact-us" id="contact">
 			<div class="contact-form">
 				<h2>GIVE US GOOD NEWS</h2>
-				<input type="text" placeholder="name" />
-				<input type="text" placeholder="Email" />
-				<input type="text" placeholder="Subject" />
-				<textarea placeholder="Your message"></textarea>
+				<label for="name">Name</label>
+				<input type="text" id="name" placeholder="name" />
+				<label for="email">Email</label>
+				<input type="text" id="email" placeholder="Email" />
+				<label for="subject">Subject</label>
+				<input type="text" id="subject" placeholder="Subject" />
+				<label for="message">Message</label>
+				<textarea id="message" placeholder="Your message"></textarea>
 				<button>SUBMIT</button>
 			</div>
 			<div class="happy-clients">
@@ -335,8 +339,10 @@
 				<div class="stay-in-touch basis">
 					<h3>STAY IN TOUCH</h3>
 					<div class="subscribe-form">
+						<label for="newsletter">Subscribe to our newsletter</label>
 						<input
 							type="text"
+						       	id="newsletter"
 							placeholder="Subscribe to our newsletter"
 						/>
 						<div class="mail-airplane">
